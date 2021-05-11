@@ -38,7 +38,7 @@ function sendToIFTTTWebhook(dataContents) {
   var payload = { 
     'value1': task.text, // task title
     'value2': task.dateCompleted, // task complete time
-    'value3': task.note
+    'value3': task.notes
   }; 
   return UrlFetchApp.fetch(IFTTT_URL, { 
     'method': 'POST', 
